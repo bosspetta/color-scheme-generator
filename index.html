@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="./css/main.css">
+        
+        <title>Color Scheme Generator</title>
+    </head>
+    <body>
+
+        <main id="main-content" class="color-scheme-app">
+
+            <div id="color-scheme-app--wrapper" class="color-scheme-app--wrapper">
+                <form id="form" class="color-scheme-app--form" method="dialog">
+                    <div class="form-group">
+                        <label for="color-picker" class="sr-only">Select a color</label>
+                        <input type="color" id="color-picker" name="color-picker" value="#F55A5A">
+                    </div>
+                    <div class="form-group">
+                        <label for="color-selector" class="sr-only">Select configuration</label>
+                        <select name="color-selector" id="color-mode-selector" title="Mode selector">
+                            <option value="monochrome">Monochrome</option>
+                            <option value="monochrome-dark">Monochrome-dark</option>
+                            <option value="monochrome-light">Monochrome-light</option>
+                            <option value="analogic">Analogic</option>
+                            <option value="complement">Complement</option>
+                            <option value="analogic-complement">Analogic-complement</option>
+                            <option value="triad">Triad</option>
+                            <option value="quad">Quad</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Get color scheme" aria-label="Get color scheme" id="color-submit">
+                    </div>
+                </form>
+                <div class="color-scheme-app--colors" id="color-scheme-app--colors"></div>
+            </div>
+
+        </main>
+
+        <p id="copied-color-message" class="copied-color-message"></p>
+
+        <script src="index.pack.js"></script>
+    </body>
+</html>

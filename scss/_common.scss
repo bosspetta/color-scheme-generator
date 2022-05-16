@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: .75rem;
+    background-color: #1c1c1c;
+    color: #2B283A;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea,html input[type="button"],
+input[type="reset"],
+input[type="submit"],button[disabled],
+html input[disabled],button::-moz-focus-inner,
+input::-moz-focus-inner, input[type="checkbox"],
+input[type="radio"], input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button, input[type="search"], input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+select, input[type="submit"] {
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    padding: 11px 10px;
+}
+
+input[type="color"] {
+    background-color: #e5e5e5;
+    padding: 5px;
+    height: 40px;
+}
+
+select {
+    background: transparent url('../img/select-icon.svg') calc(100% - 10px) center no-repeat;
+    background-size: auto 7px;
+    padding-right: 35px;
+}
+
+.copied-color-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255,255,255,.85);
+    border-radius: 2.5px;
+    padding: 10px 15px;
+    margin: 0;
+    box-shadow: 0 0 5px rgba(0,0,0,.25);
+    display: none;
+    &.show {
+        display: block;
+    }
+}

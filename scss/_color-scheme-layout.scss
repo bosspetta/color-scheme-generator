@@ -1,0 +1,35 @@
+.color-scheme-app {
+    &--wrapper {
+        background-color: white;
+        border-radius: 5px;
+        max-width: 440px;
+        overflow: hidden;
+    }
+    &--form {
+        display: flex;
+        padding: 15px;
+        .form-group {
+            flex: 1 0 auto;
+            margin: 0 5px;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &--colors {
+        display: flex;
+        min-height: 300px;
+        &--column {
+            flex-basis: 25%;
+        }
+        &--color {
+            min-height: 250px;
+            &--footer {
+                padding: 17.5px;
+            }
+        }
+    }
+}
